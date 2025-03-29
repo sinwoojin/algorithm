@@ -13,5 +13,4 @@ void main(){
 
 // 스택 = 저장공간 sessionStorage
 
-// n! = n * (n-1)!
 

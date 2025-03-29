@@ -7,7 +7,7 @@ void main(){
 }
 
 // 교수님 풀이
-double power_calc(double x, int n){
+double power_calc(double x, int n){ // 함수 앞에 반환값을 반드시 작성
     // 0승이면 1 리턴
     if(n == 0)
         return 1;

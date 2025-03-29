@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// n! = n * (n-1)!
+
 // 팩토리얼 값을 재귀함수로 구하기
 long int fact(int n){
     if (n <= 1)
