@@ -26,5 +26,3 @@ long int fact2(int n){
         return f
     }
 }
-
-// 3.14의 12승
