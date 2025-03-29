@@ -17,3 +17,25 @@ double power_calc(double x, int n){
     else
         return (x * power_calc(x * x, (n - 1)/ 2));
 }
+
+// 내 풀이
+long int power(double n, int p){
+    long result = n;
+    if( p == 0)
+        return 1
+    for (int i = 1; i < p; i++){ // p번 곱셈 수행
+        result *= n
+    }
+    return result
+}
+
+// 수정한 풀이
+double powerEdit(double n, int p){
+    double result = 1.0; // 초기값을 1로 설정하여 계산
+    if (p == 0) // p가 0 일때는 1을 반환
+        return 1;
+    for (int i = 1; i <= p; i++){
+        result += n;
+    }
+    return result;
+}

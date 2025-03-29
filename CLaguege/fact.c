@@ -26,3 +26,4 @@ long int fact2(int n){
         return f
     }
 }
+
