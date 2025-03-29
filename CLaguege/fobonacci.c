@@ -12,3 +12,6 @@ void main(){
 // 대부분 알고리즘의 복잡도는 nlogn
 
 // 스택 = 저장공간 sessionStorage
+
+// n! = n * (n-1)!
+
