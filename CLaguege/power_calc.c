@@ -6,6 +6,7 @@ void main(){
     printf("The result of power calculation is : %.4f", res);
 }
 
+// 교수님 풀이
 double power_calc(double x, int n){
     // 0승이면 1 리턴
     if(n == 0)
