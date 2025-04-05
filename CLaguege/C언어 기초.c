@@ -14,27 +14,28 @@ void main(){
 }
 
 /*
-    C언어 기본 데이터 타입
+    C언어 기본 데이터 타입 [
 
-    정수형 타입 {
-        1. short(캐릭터)
-        2. unsigned short(2byte)
-        3. int(4byte)
-        4. unsigned int (4byte)
-        5. long (4byte)
-        6. unsigned long(4byte)
-        7. long long (2byte)
-    }
+        정수형 타입 {
+            1. short(캐릭터)
+            2. unsigned short(2byte)
+            3. int(4byte)
+            4. unsigned int (4byte)
+            5. long (4byte)
+            6. unsigned long(4byte)
+            7. long long (2byte)
+        }
 
-    실수형 타입 {
-        1. float(4byte)
-        2. double(8byte)
-        3. long double(double형과 동일함)
-    }
+        실수형 타입 {
+            1. float(4byte)
+            2. double(8byte)
+            3. long double(double형과 동일함)
+            }
 
-    문자형 타입 {
-        1. char (1byte)
-        2. unsigned char(2byte)
-    }
+        문자형 타입 {
+            1. char (1byte)
+            2. unsigned char(2byte)
+        }
+    ]
 
  */
