@@ -21,7 +21,7 @@ linkedList_h * createLinkedList_h (void) {
     return L;
 }
 
-insertFirst (linkedList_h * L, char *x) {
+void insertFirst (linkedList_h * L, char *x) {
     listNode * newNode;
     newNode = (listNOde*)malloc(sizeof(listNode));
     strcpy(newNode -> data, x);
