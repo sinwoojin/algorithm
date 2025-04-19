@@ -2,7 +2,7 @@ package array;
 
 import java.util.Scanner;
 
-public class a {
+public class magicSqu {
 
     public static void main(String[] args) {
 
