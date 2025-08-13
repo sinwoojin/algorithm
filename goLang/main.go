@@ -20,7 +20,7 @@ func main() {
 		MaxAge:           12 * time.Hour,
 	}))
 
-	// Auth routes
+	// 로그인 라우팅
 	r.POST("/login", handlers.Login)
 	r.POST("/logout", handlers.Logout)
 
