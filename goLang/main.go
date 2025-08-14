@@ -20,15 +20,20 @@ func main() {
 		MaxAge:           12 * time.Hour,
 	}))
 
-	// 로그인 라우팅
+	// Auth
 	r.POST("/login", handlers.Login)
 	r.POST("/logout", handlers.Logout)
 
-	// Protected route
-	r.GET("/me", handlers.AuthMiddleware(), func(c *gin.Context) {
-		username := c.GetString("username")
-		c.JSON(200, gin.H{"username": username})
-	})
+	// Posts CRUD (JWT 보호)
+	posts := r.Group("/posts")
+	posts.Use(handlers.AuthMiddleware())
+	{
+		posts.POST("", handlers.CreatePost)
+		posts.GET("", handlers.GetPosts)
+		posts.GET("/:id", handlers.GetPostByID)
+		posts.PUT("/:id", handlers.UpdatePost)
+		posts.DELETE("/:id", handlers.DeletePost)
+	}
 
 	r.Run(":8080")
 }
